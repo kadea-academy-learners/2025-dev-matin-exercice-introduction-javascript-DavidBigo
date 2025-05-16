@@ -1,3 +1,3 @@
 const VILLE = "Kinshasa";
 
-console.log("VILLE");
+console.log(VILLE);

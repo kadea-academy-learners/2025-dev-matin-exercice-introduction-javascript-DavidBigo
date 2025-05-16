@@ -36,17 +36,6 @@ if (pourcentageTotalDepenses > 90) {
   console.log("⚠️ Dépenses trop élevées, réduisez vos charges !");
 }
 
-// Affichage
-console.log("Répartition des dépenses (% du salaire de 500€) :");
-console.log("Loyer : " + pourcentageLoyer.toFixed(2) + "%");
-console.log("Nourriture : " + pourcentageNourriture.toFixed(2) + "%");
-console.log("Transport : " + pourcentageTransport.toFixed(2) + "%");
-console.log("Loisirs : " + pourcentageLoisirs.toFixed(2) + "%");
-console.log("Autres dépenses : " + pourcentageAutres.toFixed(2) + "%");
-console.log("----------------------------");
-console.log("Total des dépenses : " + totalDepenses + "€ (" + pourcentageTotal.toFixed(2) + "%)");
-console.log("Reste après dépenses : " + (salaire - totalDepenses) + "€");
-
 // Ne pas modifier le code ci-dessous
 module.exports = {
   salaireMensuel,

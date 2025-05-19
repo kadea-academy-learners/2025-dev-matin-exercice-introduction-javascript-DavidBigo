@@ -1,10 +1,10 @@
 let ageEnfant, agePere, ageMere, ageGrandPere, ageOncle;
 // Ecrivez votre code ici
-let ageEnfant = 11;
-let agePere = ageEnfant*2;
-let ageMere = agePere-2;
-let ageGrandPere = (ageMere*2)+ageEnfant/2;
-let ageOncle = agePere+10;
+ageEnfant = 11;
+agePere = ageEnfant*2;
+ageMere = agePere-5;
+ageGrandPere = (ageMere*2)+(ageEnfant/2);
+ageOncle = agePere+10;
 
 // Ne pas modifier le code ci-dessous
 module.exports = {
@@ -13,10 +13,4 @@ module.exports = {
   ageMere,
   ageGrandPere,
   ageOncle,
-};
-
-let pourcentageLoyer,
-  pourcentageNourriture,
-  pourcentageLoisirs,
-  pourcentageAutres,
-  pourcentageTotalDepenses;
+}

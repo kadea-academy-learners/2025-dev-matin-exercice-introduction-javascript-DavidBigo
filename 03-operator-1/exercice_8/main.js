@@ -5,28 +5,24 @@ let salaireMensuel,
   autresDepenses,
   totalDepenses,
   reste;
-  
-// Ecrivez votre code ici
-let salaireMensuel = 500+(500*10)/100 ;
-let loyer = (salaireMensuel*30)/100;
-let nourriture = (salaireMensuel*20)/100;
-let transport = (salaireMensuel*10)/100;
-let autresDepenses = 50+25;
-let totalDepenses = (loyer+nourriture+transport+autresDepenses)+loisirs;
-let reste = salaireMensuel-totalDepenses;
-let loisirs = (salaireMensuel*15)/100;
 
-// Calcul du pourcentage pour chaque dépense
-let pourcentageLoyer = (loyer/salaireMensuel)*100;
-let pourcentageNourriture = (nourriture/salaireMensuel)*100;
-let pourcentageTransport = (transport/salaireMensuel)*100;
-let pourcentageLoisirs = (loisirs/salaireMensuel)*100;
-let pourcentageAutres = (autresDepenses/salaireMensuel)*100;
-let pourcentageTotalDepenses = pourcentageLoyer+pourcentageNourriture+pourcentageTransport+pourcentageLoisirs+pourcentageAutres
+// Ecrivez votre code ici
+salaireMensuel = 500 ;
+loyer = (salaireMensuel*30)/100;
+nourriture = (salaireMensuel*20)/100;
+transport = (salaireMensuel*10)/100;
+autresDepenses = 50+25;
+totalDepenses = loyer+nourriture+transport+autresDepenses;
+reste = salaireMensuel-totalDepenses;
+
+console.log("Total Depenses : " + totalDepenses);
+console.log("Reste : " + reste);
 
 // Condition
-if (pourcentageTotalDepenses > 90) {
-  console.log("Dépenses trop élevées, réduisez vos charges");
+if (reste >= 100) {
+  console.log("Budget bien géré");
+} else {
+  console.log("Attention, budget serré");
 }
 
 // Ne pas modifier le code ci-dessous

@@ -7,13 +7,13 @@ let salaireMensuel,
   reste;
 
 // Ecrivez votre code ici
-salaireMensuel = 500 ;
-loyer = (salaireMensuel*30)/100;
-nourriture = (salaireMensuel*20)/100;
-transport = (salaireMensuel*10)/100;
-autresDepenses = 50+25;
-totalDepenses = loyer+nourriture+transport+autresDepenses;
-reste = salaireMensuel-totalDepenses;
+salaireMensuel = 500;
+loyer = (salaireMensuel * 30) / 100;
+nourriture = (salaireMensuel * 20) / 100;
+transport = (salaireMensuel * 10) / 100;
+autresDepenses = 50 + 25;
+totalDepenses = loyer + nourriture + transport + autresDepenses;
+reste = salaireMensuel - totalDepenses;
 
 console.log("Total Depenses : " + totalDepenses);
 console.log("Reste : " + reste);
